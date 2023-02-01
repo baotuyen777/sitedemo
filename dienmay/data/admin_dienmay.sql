@@ -3134,17 +3134,7 @@ INSERT INTO gdd_users VALUES
 
 
 
-CREATE TABLE `gdd_wc_download_log` (
-  `download_log_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `timestamp` datetime NOT NULL,
-  `permission_id` bigint(20) unsigned NOT NULL,
-  `user_id` bigint(20) unsigned DEFAULT NULL,
-  `user_ip_address` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  PRIMARY KEY (`download_log_id`),
-  KEY `permission_id` (`permission_id`),
-  KEY `timestamp` (`timestamp`),
-  CONSTRAINT `fk_gdd_wc_download_log_permission_id` FOREIGN KEY (`permission_id`) REFERENCES `gdd_woocommerce_downloadable_product_permissions` (`permission_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 
 
 
@@ -3257,7 +3247,17 @@ CREATE TABLE `gdd_woocommerce_downloadable_product_permissions` (
   KEY `user_order_remaining_expires` (`user_id`,`order_id`,`downloads_remaining`,`access_expires`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-
+CREATE TABLE `gdd_wc_download_log` (
+  `download_log_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `timestamp` datetime NOT NULL,
+  `permission_id` bigint(20) unsigned NOT NULL,
+  `user_id` bigint(20) unsigned DEFAULT NULL,
+  `user_ip_address` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT '',
+  PRIMARY KEY (`download_log_id`),
+  KEY `permission_id` (`permission_id`),
+  KEY `timestamp` (`timestamp`),
+  CONSTRAINT `fk_gdd_wc_download_log_permission_id` FOREIGN KEY (`permission_id`) REFERENCES `gdd_woocommerce_downloadable_product_permissions` (`permission_id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 
