@@ -40,8 +40,8 @@ define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
-define( 'WP_HOME', 'http://localhost/sitedemo/bds-datmoi/real' );
-define( 'WP_SITEURL', 'http://localhost/sitedemo/bds-datmoi/real' );
+define( 'WP_HOME', 'https://savyone.site/sitedemo/bds-datmoi/' );
+define( 'WP_SITEURL', 'https://savyone.site/sitedemo/bds-datmoi/' );
 /**#@+
  * Authentication Unique Keys and Salts.
  *
