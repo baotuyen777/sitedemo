@@ -1,0 +1,28 @@
+February 12, 2018 - Version 1.3
+- Added: Customize Logged in greeting text and Logged out greeting text
+- Added: Minimized on desktop option
+- Added: Step-by-step instructions
+- Improved: Text
+
+February 9, 2018 - Version 1.2.1
+- Fixed: Some small bugs
+
+February 8, 2018 - Version 1.2
+- Added: Login with Facebook button to manage your Fan Page
+- Added: Option display on Mobile or Desktop
+- Added: Option display one page or post you want
+- Added: Option margin Messenger Chatbox from bottom (in some cases it obscures the totop button)
+- Added: Icon postion left or right
+- Added: Main color for Messenger icon, text and chatbox
+- Improved: Don't need Facebook app
+- Improved: Don't need enter Page ID
+- Improved: Don't need add your domain in whitelist
+- Improved: Work with website non SSL
+- Improved: UI/UX
+- Fixed: Some small bugs
+
+December 10, 2017 - Version 1.1
+- Fixed: Some small bugs
+
+November 30, 2017 - Version 1.0
+- Version 1.0 Initial Release
