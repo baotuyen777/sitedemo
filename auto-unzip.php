@@ -30,7 +30,6 @@ function searchFileZip($dir)
         }
     }
 }
-
 function unzipFile($file, $destination)
 {
     echo $file . $destination;
@@ -46,4 +45,6 @@ function unzipFile($file, $destination)
         return true;
     } else {
         echo 'Unzipped Process failed';
- 
+    }
+    return false;
+}
