@@ -6,19 +6,19 @@ error_reporting(E_ALL);
 //1. scan all directory
 $sites = scandir(__DIR__, SCANDIR_SORT_DESCENDING);
 foreach ($sites as $site) {
-    if (strpos($site, '_done')) {
+//    if (strpos($site, '_done')) {
         $siteDir = __DIR__ . '/' . $site;
 //        $newSiteName = vn_to_str($site);
 //        $newSiteName = str_replace('Mẫu website ', '', $site);
 //        $newSiteName = str_replace('Mãu website ', '', $site);
-        $newSiteName = str_replace('_done', '', $site);
+//        $newSiteName = str_replace('_done', '', $site);
+        $newSiteName = str_replace('-', '', $site);
         rename($siteDir, __DIR__ . '/' . $newSiteName);
         echo $site;
         echo $newSiteName;
         echo '<hr/>';
-    }
+//    }
 }
-
 
 function vn_to_str($str)
 {
